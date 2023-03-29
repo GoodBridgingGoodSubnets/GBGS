@@ -1,4 +1,8 @@
 /**
+ *Submitted for verification at Etherscan.io on 2023-03-29
+*/
+
+/**
  *Submitted for verification at Etherscan.io on 2022-05-25
 */
 
@@ -866,7 +870,7 @@ contract GoodBridgingGoodSubnets is Context, IERC20, Ownable {
     }
 
     function _getTValues(uint256 tAmount) private pure returns (uint256, uint256) {
-        uint256 tFee = tAmount.div(100);
+        uint256 tFee = tAmount.div(1000);
         uint256 tTransferAmount = tAmount.sub(tFee);
         return (tTransferAmount, tFee);
     }
